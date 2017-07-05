@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_open__page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.micir.Open_Page"
+    android:background="@drawable/open_background"
+    android:backgroundTint="#FF011632"
+    android:backgroundTintMode="screen">
+
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/micirbtn"
+        android:layout_width="300dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cb_color="@color/primary_light"
+        app:cb_pressedRingWidth="5dp"
+        android:layout_height="300dp"
+        android:backgroundTintMode="multiply"
+        android:src="@drawable/openpage_circle"
+        android:adjustViewBounds="false" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/openpage_tv"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:shadowRadius="10"
+        android:shadowColor="@color/colorPrimary"
+        android:textColor="@color/search_input_background_color"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/micirbtn"
+        android:paddingTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading_iv"
+        android:background="@drawable/loading"
+        android:backgroundTintMode="screen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#FF011632" />
+
+
+</RelativeLayout>

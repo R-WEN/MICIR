@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="175dp"
+    android:layout_height="100dp"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_margin="3dp"
+    card_view:cardCornerRadius="1dp"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/icon"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+
+                android:layout_gravity="center_vertical"
+
+
+                app:border="true"
+                app:border_color="#EEEEEE"
+                app:border_width="4dp"
+                app:shadow="true"
+                android:layout_weight="1" />
+        </FrameLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:text="Medium Text"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:textColor="#33CC33"
+                android:maxLines="2"
+                android:textSize="18dp"
+                android:layout_height="50dp" />
+            <FrameLayout
+                android:id="@+id/mask"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="40dp"
+                android:layout_width="wrap_content">
+                <TextView
+                    android:id="@+id/item_fooddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:padding="2dp"
+                    android:layout_marginLeft="10dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

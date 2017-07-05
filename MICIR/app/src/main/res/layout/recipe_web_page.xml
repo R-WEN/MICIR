@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_web_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.micir.RecipeWebPage">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_dark"
+        android:layout_width="match_parent" >
+        <TextView
+            android:text="標題"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/toolbarTitle"
+            android:paddingRight="60dp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recipe_wv"
+        android:layout_below="@+id/toolbar" >
+
+    </WebView>
+
+    <ImageButton
+        android:id="@+id/ing_info_btn"
+
+        android:background="@android:drawable/ic_menu_info_details"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+
+</RelativeLayout>

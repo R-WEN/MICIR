@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ing_groupname"
+        android:textSize="20dp"
+        android:textColor="#FFF88305"
+        android:layout_marginLeft="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp">
+
+            <ProgressBar
+
+                android:id="@+id/ing_progressBar"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ing_info_iv"
+                android:background="@drawable/checkmark" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ing_info_iv3"
+                android:background="@drawable/warning" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ing_info_iv2"
+                android:background="@android:drawable/ic_delete" />
+        </RelativeLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_height="wrap_content"
+            android:id="@+id/ing_info_tv"
+
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:layout_width="130dp"></TextView>
+        <TextView
+            android:text="TextView"
+            android:layout_height="wrap_content"
+            android:id="@+id/ing_info_tv2"
+
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

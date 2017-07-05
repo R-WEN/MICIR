@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="229dp">
+
+        <ImageButton
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            app:srcCompat="@drawable/fab_add"
+            android:id="@+id/foodImgButton"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:text="點我掃描條碼"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/barcode"
+            android:layout_weight="1"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:drawable/alert_light_frame"
+
+            android:maxLines="1"
+            android:maxLength="20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:layout_weight="0.98">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:text="分類："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp" />
+
+            <Spinner
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:id="@+id/foodclass"
+                android:layout_width="55sp"
+                android:layout_weight="0.20" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="名稱："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="25sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editfoodname"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+
+                android:textCursorDrawable="@android:color/transparent"
+                android:textColorHint="@android:color/transparent"
+                android:textColorHighlight="@android:color/transparent"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:background="@android:drawable/editbox_background"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="數量："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="25sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editquantity"
+                android:layout_weight="1"
+
+
+                android:textCursorDrawable="@android:color/transparent"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:background="@android:drawable/editbox_background"
+                android:maxWidth="25dp"
+                android:layout_marginRight="200dp"
+                android:textSize="23dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="購買日期："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="25sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editbuyDate"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="有效日期："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="25sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editfoodDate"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/addfood"
+            android:layout_weight="0.43"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:background="@android:drawable/screen_background_light_transparent"
+            app:srcCompat="?android:attr/listChoiceIndicatorSingle"
+            android:tint="@android:color/holo_green_dark" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            android:id="@+id/canceladdfood"
+            android:layout_weight="0.43"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:elevation="0dp"
+            android:tint="@color/viewfinder_laser" />
+    </LinearLayout>
+
+</LinearLayout>

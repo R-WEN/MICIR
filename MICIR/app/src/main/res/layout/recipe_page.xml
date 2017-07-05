@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipe_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            wheel:matProg_barColor="#5588FF"
+            wheel:matProg_progressIndeterminate="true"
+            wheel:matProg_fillRadius="true" />
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/recipe_search_view"
+            android:layout_width="match_parent"
+            app:floatingSearch_searchHint="輸入食材名稱或料理名稱..."
+            app:floatingSearch_suggestionsListAnimDuration="250"
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_leftActionMode="showSearch"
+
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

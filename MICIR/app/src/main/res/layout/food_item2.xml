@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/connectfood_iv"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+
+        app:border="true"
+        app:border_color="#EEEEEE"
+        app:border_width="4dp"
+        app:shadow="true"
+
+        android:layout_width="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="70dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectfood_tv_class"
+            android:layout_gravity="center_vertical"
+            android:textColor="#33CC33"
+            android:layout_marginLeft="15dp"
+            android:textSize="22dp"
+             />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectfood_tv"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

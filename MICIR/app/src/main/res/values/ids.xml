@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item name="foodGridview0" type="id"></item>
+    <item name="foodGridview1" type="id"></item>
+    <item name="foodGridview2" type="id"></item>
+    <item name="foodGridview3" type="id"></item>
+    <item name="foodGridview4" type="id"></item>
+    <item name="foodGridview5" type="id"></item>
+</resources>
